@@ -11,10 +11,24 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
+html,
+body {
+  height: 100%;
+  background-color: #111;
+  color: #000;
   font-size: 1em;
   line-height: 1.4;
+}
+
+.logo {
+  background-color: #000;
+  width: 100%;
+}
+
+.inner {
+  background-color: #000;
+  justify-content: center;
+  padding-left: 35px;
 }
 
 /*
@@ -189,6 +203,9 @@ textarea {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+  .inner {
+    padding-left: 80px;
+  }
 }
 
 @media print,
@@ -261,5 +278,11 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
-}
 
+  .inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    margin-bottom: 10px;
+  }
+}
