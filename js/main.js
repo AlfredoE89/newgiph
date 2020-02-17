@@ -1,3 +1,18 @@
+/*$(document).ready(function() {
+  $("button").click(function() {
+    $.get(
+      "http://api.giphy.com/v1/gifs/search?q=" +
+        input +
+        "+&api_key=Gth0LvQWnw48Q1dtSQ80b91bfE5q28au&limit=30",
+      function(data, status) {
+        alert("Data: " + data + "\nStatus: " + status);
+      }
+    );
+  });
+});
+*/
+
+/*"http://api.giphy.com/v1/gifs/search?q=input&api_key=Gth0LvQWnw48Q1dtSQ80b91bfE5q28au&limit=30"*/
 function getData() {
   var input = $("#searchtext").val();
 
